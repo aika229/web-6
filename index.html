@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Productivity Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Personal Productivity Dashboard</h1>
+    <p id="userIntro"></p>
+  </header>
+
+  <main>
+    <section class="card wide">
+      <h2>Daily Motivation</h2>
+      <p id="motivationText">Click the button to reveal your daily message.</p>
+      <button id="changeTextBtn">Show Motivation</button>
+    </section>
+    
+ <section class="card">
+      <h2>Style Customization</h2>
+      <div id="colorBox">Change my color or font size</div>
+      <div class="btn-group">
+        <button id="changeColorBtn">Change Background</button>
+        <button id="changeFontBtn">Change Font Size</button>
+      </div>
+    </section>
+
+
+    <section class="card">
+      <h2>Quick Notes</h2>
+      <ul id="itemList">
+        <li>Start your day with focus</li>
+      </ul>
+      <div class="btn-group">
+        <button id="addItemBtn">Add Note</button>
+        <button id="removeItemBtn">Remove Last</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Hover Effect</h2>
+      <div id="hoverBox">Hover over me</div>
+    </section>
+
+    <section class="card">
+      <h2>Live Typing</h2>
+      <input type="text" id="liveInput" placeholder="Type something..." />
+      <p>Preview: <span id="displayText"></span></p>
+    </section>
+
+    <section class="card">
+      <h2>Form Validation</h2>
+      <form id="myForm">
+        <input type="text" id="name" placeholder="Name" /><br />
+        <input type="email" id="email" placeholder="Email" /><br />
+        <input type="password" id="password" placeholder="Password" /><br />
+        <button type="submit">Submit</button>
+        <p id="errorMsg"></p>
+      </form>
+    </section>
+
+    <section class="card wide">
+      <h2>To-Do List</h2>
+      <div class="todo-container">
+        <input type="text" id="taskInput" placeholder="Add new task..." />
+        <button id="addTaskBtn">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by YOUR NAME | Group XYZ | JS DOM Assignment #6</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
